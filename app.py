@@ -2,7 +2,7 @@ import streamlit as st
 
 # Custom imports 
 from util import MultiPage
-from pages import class_diagram, main_page, time_series # import your pages here
+from pages1 import class_diagram, main_page, time_series # import your pages here
 
 # Create an instance of the app 
 app = MultiPage.MultiPage()
