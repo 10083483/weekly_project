@@ -112,7 +112,7 @@ def create_matplotlib(data):
 #--------------------------------------------------------
 # 메인 함수
 def main():
-    st.subheader('아파트 매매가와 미분양 수 회귀분석,r-score 분석')
+    st.subheader('아파트 매매가와 1인당 평균소득 회귀분석,r-score 분석')
     #st.write("")
     
     price = pp.check_price()

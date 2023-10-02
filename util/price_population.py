@@ -159,3 +159,15 @@ def main():
     st.dataframe(data)
     
     create_matplotlib(data)
+    
+def result_sumary():
+    result_summary = """
+    **결과 정리**
+    
+    - 인천과 세종은 인구 수와 양의 상관관계, 나머지는 음의 관계를 가지고 있습니다.
+    
+    - 인천과 울산, 세종은 결정 계수가 0.7보다 낮아 아파트 매매가의 변화를 설명하기에는 부족한 것으로 보입니다.
+    서울, 부산, 대구, 광주, 대전은 인구 수에 따른 매매가와 강한 관련이 있을 가능성이 높다고 보입니다.
+    """
+    st.markdown(result_summary)
+    

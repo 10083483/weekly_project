@@ -89,7 +89,7 @@ def trans_desc():
         plt.tight_layout()
 
     # 범례 추가 (첫 해의 범례 항목으로 한 번만 추가)
-    plt.figlegend(legend_labels, loc='lower center', bbox_to_anchor=(0.80, 0.90), prop = font_manager.FontProperties(fname=font_path, size=10))
+    plt.figlegend(legend_labels, loc='lower center', bbox_to_anchor=(0.93, 0.83), prop = font_manager.FontProperties(fname=font_path, size=10))
 
     # 전체 도화지 출력
     st.pyplot(fig)
