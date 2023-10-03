@@ -131,6 +131,7 @@ def create_matplotlib(data):
         y_pred = model.predict(X)
         # R-squared 계산
         r2 = r2_score(y, y_pred)
+        
 
         # 그래프 시각화      
         fig, ax = plt.subplots(figsize=(10, 6))
@@ -142,9 +143,11 @@ def create_matplotlib(data):
         plt.legend()
         st.pyplot(fig)
         # 회귀 계수와 절편 정보를 표시
+        #st.write(f'• {region}의 상관계수: {correlation}')
         st.write(f'• {region}의 회귀 계수 (기울기): {model.coef_[0]}')
         st.write(f'• {region}의 절편: {model.intercept_}')
         st.write(f'• R-squared (결정 계수): {r2}')
+        
     
 
 # 메인 함수
