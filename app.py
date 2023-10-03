@@ -3,7 +3,7 @@ import streamlit as st
 # Custom imports 
 from util import MultiPage
 # import your pages here
-from pages1 import class_diagram, main_page, time_series, price_interest, area_difference,area_deep1, area_deep2, area_deep3,area_deep4
+from pages1 import class_diagram, main_page, time_series, price_interest, area_difference,area_deep1, area_deep2, area_deep3,area_deep4,apt_sales_volume
 
 # Create an instance of the app 
 app = MultiPage.MultiPage()
