@@ -3,7 +3,7 @@ import streamlit as st
 # Custom imports 
 from util import MultiPage
 # import your pages here
-from pages1 import class_diagram, main_page, time_series,week_diagram, price_interest, area_difference,area_deep1, area_deep2, area_deep3,area_deep4,apt_sales_volume
+from pages1 import class_diagram, main_page, time_series,week_diagram, price_interest, area_difference,area_deep1, area_deep2, area_deep3,area_deep4,apt_sales_volume, result
 
 # Create an instance of the app 
 app = MultiPage.MultiPage()
@@ -24,7 +24,7 @@ app.add_page("지역차이분석 01", area_deep1.app)
 app.add_page("지역차이분석 02", area_deep2.app)
 app.add_page("지역차이분석 03", area_deep3.app)
 app.add_page("지역차이분석 04", area_deep4.app)
-#app.add_page("지역차이분석 05", area_deep5.app)
+app.add_page("결론", result.app)
 
 # The main app
 app.run()
